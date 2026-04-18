@@ -1,7 +1,8 @@
 import requests
 import time
+import os
 
-API_KEY = "aaacab3699bc87a9a5cef0921735d73339fada23fbfd8bdc7af88dd13f0f65f8"
+API_KEY = os.environ.get("VT_API_KEY")
 
 def check_url_reputation(url):
     headers = {
